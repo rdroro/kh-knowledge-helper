@@ -1,0 +1,110 @@
+html, body {
+	padding : 0;
+	margin : 0;
+	background: #eee;
+	width : 100%;
+	height : 100%;
+	overflow: hidden;
+}
+
+header {
+	min-height : 80px;
+	height : 8%;
+	width: 100%;
+	background: #ddd;
+	margin : 0;
+	padding : 0;
+	overflow: hidden;
+}
+
+#dashboard {
+	width : 100%;
+	height : 92%;
+	overflow: hidden;
+}
+
+#fiche {
+	width : 300px;
+	max-height : 300px;
+	background : white;
+	box-shadow: 0 0 2px black;
+	position : absolute;
+	top : 90px;
+	overflow : hidden;
+	left : 80%;
+	z-index: 1;
+}
+
+#fiche #title {
+	width : 100%;
+	height : 60px;
+	border: none;
+	font-size: 20px;
+	color : #222;
+	margin : 0;
+	padding : 5px;
+	font-style: italic;
+	border-bottom: 1px solid #ddd;
+}
+
+#fiche #title:hover {
+	border : none;
+	box-shadow: none;
+}
+
+#fiche textarea {
+	width : 300px;
+	height : 240px;
+	resize: none;
+	border : none;
+}
+
+
+#dock {
+	width : 80px;
+	height : 400px;
+	box-shadow: 0 0 4px #555;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	position : absolute;
+	top : 200px;
+	left : -60px;
+	background : white;
+	transition: all;
+	transition-duration: 0.5s;
+	z-index: 2;
+}
+
+#dock:hover {
+	left : 0;
+}
+
+#dock div {
+	width : 100%;
+	height : 80px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 80px;
+	overflow: hidden;
+}
+
+#dock div:hover {
+	background : #eee;
+}
+
+#dashboard .container {
+	background : white;
+	box-shadow: 0 0 4px black;
+}
+
+#dock .ui-widget-content {
+	border : none;
+}
+
+
+
+
+
+
+
+
