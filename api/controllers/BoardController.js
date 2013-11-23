@@ -33,7 +33,11 @@
 
    	});
 
-}
+   },
+
+   editor: function (req, resp) {
+   	resp.view('board/editor')
+   }
 
 
 };

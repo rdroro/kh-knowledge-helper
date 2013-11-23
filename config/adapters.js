@@ -38,7 +38,7 @@ module.exports.adapters = {
     user: 'root',
     // Psst.. You can put your password in config/local.js instead
     // so you don't inadvertently push it up if you're using version control
-    password: 'miceli', 
+    password: 'mysqlserver', 
     database: 'kh'
   }
 };

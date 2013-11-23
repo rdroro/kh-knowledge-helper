@@ -39,6 +39,11 @@ module.exports.routes = {
   '/waow/:id': {
     controller: 'BoardController',
     action: 'waowFunc'
+  },
+
+  '/editor': {
+    controller: 'BoardController',
+    action: 'editor'
   }
 
   /*
