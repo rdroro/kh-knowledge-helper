@@ -1,10 +1,8 @@
-<header>
-</header>
-		
-<section id="dashboard">
-<div id="fiche">
-	<input type="text" id="title" name="title" placeholder="Ttitre..."/>
-	<textarea placeholder="Description de votre fiche ..."> </textarea>
+<%if (typeof modal != 'undefined') { %>
+<%- partial('modal')%>
+<% } %>
+<div>
+	<button class='btn btn-primary' id='save-dashboard'>Save</button>
 </div>
 
 <div id="dock">
@@ -21,6 +19,15 @@
 		P
 	</div>
 </div>
+
+
+
+
+<section id="dashboard">
+	<div id="fiche">
+		<input type="text" id="title" name="title" placeholder="Titre..."/>
+		<textarea placeholder="Description de votre fiche ..."> </textarea>
+	</div>
 </section>
 
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -28,3 +35,12 @@
 
 <!-- Brain application script-->
 <script type="text/javascript" src="/js/brain.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+	$('#save-dashboard').bind('click', function () {
+		var dashboard = $('#dashboard').html();
+		console.log(dashboard);
+	})
+});
+</script>

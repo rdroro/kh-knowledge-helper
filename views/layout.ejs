@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <!--
         For demonstration purposes, the `title` is dynamically set here based on
         your `sails.config.appName` to show that you can inject data into layouts
         exactly the same way as with your other view templates.
-    -->
-    <title>Kh - Knowledge Helper</title>
-    
-    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+      -->
+      <title>Kh - Knowledge Helper</title>
+
+      <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
 
 
 
-    <!-- Viewport mobile tag for sensible mobile support -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+      <!-- Viewport mobile tag for sensible mobile support -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-	<link rel="stylesheet" href="/styles/style.css"/>
-		
-	<!-- jQuery	-->
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+      <link rel="stylesheet" href="/styles/style.css"/>
 
-    <link rel="stylesheet" type="text/css" href="/styles/bootstrap.min.css">
+      <!-- jQuery	-->
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+      <link rel="stylesheet" type="text/css" href="/styles/bootstrap.min.css">
 
 
     <!--
@@ -49,6 +49,7 @@
 
   <body>
 
+    <%- partial('partials/header')%>
     <!-- Include the view file for the current controller/route -->
     <%- body %>
 
@@ -104,5 +105,5 @@
 
     -->
 
-    </body>
-</html>
+  </body>
+  </html>

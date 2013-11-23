@@ -13,6 +13,18 @@
   }
   */
 
+  index: function (req, resp) {
+  	resp.view(
+  		'board/editor', 
+  		{
+  			modal: true
+  		});
+  },
+
+  explorer: function (req, resp) {
+
+  },
+
   /**
    * waowFunc let you increment waow count
    * @return JSON object {error: "Error server message"}

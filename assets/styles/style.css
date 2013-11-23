@@ -7,14 +7,46 @@ html, body {
 	overflow: hidden;
 }
 
-header {
-	min-height : 80px;
-	height : 8%;
-	width: 100%;
-	background: #ddd;
-	margin : 0;
-	padding : 0;
-	overflow: hidden;
+body {
+	background: url('../images/texture-bois3.jpg');
+	background-size: 100%;
+}
+
+header{
+	background:#333333;
+	padding:10px;
+}
+header p{
+	margin-bottom:0;
+}
+header .btn-toolbar{
+	margin-top:10px;
+}
+.logo img{
+	max-height:55px;
+}
+.btn-default {
+    background: none;
+	color:#fff;
+}
+.btn {
+	border-radius:0px;
+	margin-left:10px;
+}
+header .btn-group{
+	margin-left:10px !important;
+}
+/* Module Modal */
+
+.modal-footer .btn + .btn {
+    margin: 0;
+}
+
+.glyphicon{
+	font-size:500%;
+}
+.modal-body .col-md-4{
+	text-align:center;
 }
 
 #dashboard {
