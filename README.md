@@ -1,4 +1,2 @@
-kh-knowledge-helper
-===================
-
-Project for hackathon Open ClassRooms
+# demo
+### a Sails application
