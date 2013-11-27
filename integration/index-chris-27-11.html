@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf_8" />
+        <title>knowledge helper</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <!-- My style -->
+        <link href="css/style.css" rel="stylesheet" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<!-- jQuery	-->
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script src="js/jquery.jcarousel-core.min.js" type="text/javascript"></script>
+		<script src="js/dist/js/bootstrap.min.js" type="text/javascript"></script>
+		<!-- Brain application script-->
+		<link rel="stylesheet" href="js/dist/css/bootstrap.min.css" />
+		<!-- sceditor	-->
+		<script src="js/tinymce/tinymce.min.js" type="text/javascript"></script>
+		
+    </head>
+	
+    <body>
+			<header>
+				<div class="container">
+					<div class="col-md-6 logo">
+						<p><a href="#" ><img src="images/logo-entete.svg" alt="logo - knowledge helper" /></a></p>
+					</div>
+					<div class="col-md-6">
+						<div class="btn-toolbar pull-right" role="toolbar">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default button">connexion</button>
+							</div>
+							<div class="btn-group">
+								<button type="button" class="btn btn-default button">inscription</button>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</header>		
+			
+			<div id="site" class="container">
+	
+				</section> <!-- Modal -->
+				
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								</div>
+								<div class="row">
+									<div class="modal-body">	
+										<div class="col-md-4"><img src="images/picto-creation-fiche.svg.png" alt="fiches" /><p>Créer ou lire <br/>des fiches</p></div>
+										<div class="col-md-4"><img src="images/picto-qcm.svg.png" alt="QCM" /><p class="middle">Créer ou répondre <br/>à des QCM</p></div>
+										<div class="col-md-4"><img src="images/picto-share.svg.png" alt="Share" /><p>Partager ses connaissances</p></div>
+									</div>
+								</div>
+							</div><!-- /.modal-content -->	
+								<div class="row modal-footer">
+									<button type="button" class="col-md-offset-1 col-md-5 btn btn-default"><a href="editor/index.html">Créer</a></</button>
+									<button type="button" class="col-md-offset-1 col-md-5 btn btn-default">Explorer</button>
+								</div>
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
+					
+				</section>  <!--end modal-->
+				
+				
+				<section> <!--contenu-->
+					<div id="Carousel" class="carousel slide">
+						
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="http://drykannart.files.wordpress.com/2013/05/daft-punk-random-access-memories-cover.jpeg">
+							</div>
+							<div class="item">
+								<img src="http://drykannart.files.wordpress.com/2013/05/daft-punk-random-access-memories-cover.jpeg">
+							</div>
+							<div class="item">
+								<img src="http://brigand.ca/wp-content/uploads/2013/05/Random-Access-Memories1.jpg">
+							</div>
+						    </div>
+						    <a class="left carousel-control" href="#Carousel" data-slide="prev">
+							   <img src="images/arrowleft.png" />
+						    </a>
+						    <a class="right carousel-control" href="#Carousel" data-slide="next">
+							   <img src="images/arrowright.png" />
+						    </a>
+					    </div>
+				</section> <!--end contenu-->
+				
+				
+			</div> <!--end #site-->
+			<footer>
+				<div class="container">
+					
+						<div class="btn-toolbar" role="toolbar">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default creer"><a href="editor/index.html">Créer</a></button>
+							</div>
+							<!-- <div class="btn-group">
+									<button type="button" class="btn btn-default qcm"><a href="editor/index.html">QCM</a></button>
+								</div>
+
+							<!-- Button trigger modal -->
+							<div class="btn-group">
+								<button id="btnqcm" class="btn btn-default qcm" data-toggle="modal" data-target="#qcm">
+								  QCM
+								</button>
+							</div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="qcm" tabindex="-1" role="dialog" aria-labelledby="qcmLabel" aria-hidden="true">
+								  <div class="modal-dialog">
+										<!--<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+											<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+										</div> -->
+										<div class="modal-content">
+											<div class="modal-body">
+												<img src="images/qcmdefdef.png" />
+												<!--<form id="MFC" action="result-qcm.php" method="post">
+													// <fieldset>
+														// <p>quelle est la nationalité d'Einstein ?</p>
+														// <label for="qcm11">Française</label>
+														// <input type="checkbox" name="qcm11" id="france" />
+														// <label for="qcm12">Allemande</label>
+														// <input type="checkbox" name="qcm12" id="allemand" />
+														// <label for="qcm13">Suisse</label>
+														// <input type="checkbox" name="qcm13" id="suisse" />
+														// <p>qu'est-ce qui l'a rendu célèbre ?</p>
+														// <label for="qcm21">Sa théorie de la relativité générale </label>
+														// <input type="checkbox" name="qcm21" id="france" />
+														// <label for="qcm22">Sa coupe de cheveux</label>
+														// <input type="checkbox" name="qcm22" id="allemand" />
+														// <label for="qcm23">Ses cours</label>
+														// <input type="checkbox" name="qcm23" id="suisse" />
+														// <input type="submit"  id="submit" value="soumettre" /><br />
+													// </fieldset>
+												 // </form> -->
+											</div>
+										</div><!-- /.modal-content -->  
+									  <!--<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Save changes</button>
+									  </div> -->
+								  </div><!-- /.modal-dialog -->
+								</div><!-- /.modal -->
+							
+							<div class="waow">
+								<a src=""><img src="images/waow-button.svg" alt="waow" /></a>
+							</div>
+						</div>
+					
+				</div>
+			</footer>		
+    </body>
+    
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready( function() {
+				$('#myModal').modal({
+					mode : "show",
+					autoplay : false
+				});
+				
+				//	click sur qcm
+				$('#btnqcm').click( function() {
+					$('#qcm').modal({
+						autoplay : false
+					});
+				});
+				
+				$('.carousel').carousel()
+			});
+			
+		</script>
+		
+</html>
