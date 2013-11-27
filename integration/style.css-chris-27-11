@@ -1,0 +1,140 @@
+/*général*/
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background:url('../images/paper.png') repeat;
+}
+header, footer{
+	background:#333333;
+	padding:10px;
+}
+.btn {
+    border-radius: 0;
+}
+a{
+	color:#fff;
+}
+a:hover, a:focus, a:active, .creer{
+	color:#333;
+	text-decoration:none;
+}
+/*header*/
+
+header p{
+	margin-bottom:0;
+}
+header .btn-toolbar{
+	margin-top:10px;
+}
+.logo img{
+	max-height:55px;
+}
+.btn-default {
+    background: none;
+	color:#fff;
+}
+header .btn {
+	margin-left:20px;
+}
+header .btn-group{
+	margin: 0 -5px 0 10px !important;
+}
+/* Module Modal index */
+
+.modal-header {
+	position:relative;
+    border-bottom: none;
+    min-height: 0;
+}
+.close{
+	position:absolute;
+	top:13px;
+	right:-28px;
+}
+.modal-body p{
+	padding:0 0 0 34px;
+}
+.modal-body p.middle{
+	padding:0 0 0 11px;
+}
+.modal-content{
+	padding:0 45px;
+	border-radius:0;
+}
+.modal-footer {
+    border-top: none;
+	background-color:#191919;
+    margin: 0px;
+    padding: 20px 0;
+	border-radius:0;
+}
+header .btn {
+    border-radius: 0;
+    margin-right: 10px;
+    padding: 7px 20px;
+}
+
+.modal-body .col-md-4{
+	text-align:center;
+}
+/* Module Modal qcm */
+#qcm  .modal-content{
+	background-color:none;
+}
+#qcm .modal-header {
+	background-color:#C80122;
+	color:#fff;
+	font-weight:100 !important;
+	text-align:center;
+}
+.modal h4{
+	font-weight:100 !important;
+}
+/* module carousel */
+#carousel{
+	position:relative;
+}
+.carousel{
+	z-index:40;
+}
+.carousel-control.left  img{
+	position:absolute;
+	bottom:-66px;
+	left:25px;
+	z-index:50;
+}
+.carousel-control.right img{
+	position:absolute;
+	bottom:-66px;
+	right:15px;
+}
+
+/* footer*/
+
+footer {
+	height:75px;
+	position:relative
+}
+
+footer .btn-toolbar{
+	margin-top:15px;
+}
+footer .btn-toolbar .creer{
+	margin-left:55px !important;
+}
+footer .btn-group .qcm{
+	position:absolute;
+	top:0px;
+	left:435px;
+}
+footer .btn-toolbar .submit{
+	position:absolute;
+	top:-7px;
+	left:980px;
+}
+.waow  img{
+	height:45px;
+	margin-top:-10px;
+	float:right;
+	padding-right:45px;
+}
