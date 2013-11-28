@@ -1,0 +1,284 @@
+html, body {
+	padding : 0;
+	margin : 0;
+	background: #eee;
+	width : 100%;
+	height : 100%;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+* { font-family: 'Roboto', sans-serif;}
+#dashboard {
+	width : 1100px;
+	margin : 0 auto;
+	border-left : dotted 3px #ddd;
+	border-right : dotted 3px #ddd;
+	height : 81%;
+	overflow: hidden;
+	position: relative
+}
+
+#fiche {
+	width : 250px;
+	/*max-height : 300px;*/
+	background : #333;
+	box-shadow: 3px 3px 0 #ddd;
+	position : absolute;
+	top : -5px;
+	overflow : hidden;
+	left : 5px;
+	z-index: 0;
+}
+
+#fiche #title {
+	width : 100%;
+	height : 35px;
+	border: none;
+	font-size: 20px;
+	color : #222;
+	margin : 20px 20px 10px 20px;
+	padding : 3px;
+	/*font-style: italic;*/
+	/*border-bottom: 1px solid #ddd;*/
+	box-shadow: none;
+	background: #111;
+	color : #eee;
+	
+}
+
+#fiche #title:focus, #fiche #title:active, #fiche #title:hover {
+	box-shadow: none;
+	border : none;
+	outline: none;
+}
+
+
+#fiche textarea:focus, #fiche textarea:active, #fiche textarea:hover {
+		box-shadow: none;
+	border : none;
+	outline: none;
+}
+
+#fiche input {
+	margin : 0;
+	visibility: visible;
+	display : block;
+	background : #333 !important;
+	
+}
+
+#lienFiche {
+	width : 210px !important;
+	position : absolute;
+	z-index : 3;
+	left : 30px;
+	top : 90px;
+	border : none;
+	box-shadow : none;
+}
+
+
+
+#fiche img {
+	width : 100%;
+	height : 150px;
+	background : #ccc;
+}
+
+#fiche textarea {
+	padding : 5px;
+	overflow: hidden;
+	height : 150px !important;
+	width : 100%;
+	resize: none;
+	border : none;
+	background: #333;
+	color : #eee;
+	margin : 10px 20px 20px 20px;
+	padding-right: 20px;
+}
+
+
+#dock {
+	width : 80px;
+	height : 320px;
+	box-shadow: 3px 3px 0 #ddd;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	position : absolute;
+	top : 200px;
+	left : -60px;
+	background : white;
+	transition: all;
+	transition-duration: 0.5s;
+	z-index: 2;
+}
+
+#dock:hover {
+	left : 0;
+}
+
+#dock div {
+	width : 100%;
+	height : 80px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 80px;
+	overflow: hidden;
+}
+
+#dock div:hover {
+	cursor : pointer;
+}
+
+#dashboard .containeur {
+	background : white;
+	/*overflow : hidden;*/
+	border : 3px black solid; 
+}
+/*
+#dock .ui-widget-content {
+	border : none;
+}*/
+
+.containeur .ui-content-widget input {
+	border : none !important;
+	box-shadow: none !important;
+}
+
+.postit{
+	background:#fefabc; 
+	/*padding:15px;*/
+	font-family: 'Gloria Hallelujah', cursive; 
+	font-size:15px; 
+	color: #000; 
+	position : absolute;
+	overflow: hidden;
+	margin-left : -3px;
+	margin-top: -3px;
+	width : 100%;
+	height : 100% !important;
+	resize : none;
+	padding : 20px;
+}
+
+.toolbar {
+	width : 70% !important;
+	/*position: relative;*/
+	top : 15px;
+	padding : 4px;
+	border-radius: 3px;
+	/*border : 2px #ddd solid !important;*/
+	margin-left : -5px !important;
+	float : left;
+}
+
+.cross {
+width : 30px; height : 30px; margin : 5px;
+float : left;
+	font-weight: 600;
+	text-align: center;
+	line-height: 30px;
+}
+
+.elV .cross {
+	top : -12px;
+}
+.cross:hover {
+	cursor: pointer;
+}
+
+.colorSelector {
+	width : 8%;
+	height : 22px;
+	margin-left : 3px;
+	/*position : relative;
+	top : 18px;
+	left : 80%;*/
+	
+	border : 2px solid black;
+	background : #ddd;
+}
+
+.elP .cross {
+	position : absolute !important;
+	top : 10px !important;
+	left : 10px !important;
+	z-index: 4 !important;
+	colot : black!important;
+}
+.ui-icon, .ui-widget-content .ui-icon {
+	background-image: none !important;
+}
+
+.postit #mce_6 {
+	position : absolute;
+	z-index : 2;
+	top : 30px;
+}
+
+.containeur {
+	padding : 0;
+}
+
+#elText {
+	background-image: url('picto-texte.svg');
+	border : none;
+	
+	background-size : 50%;
+	background-position : 40%;
+	background-repeat: no-repeat;
+}
+
+#elVideo {
+	background-image: url('picto-video.svg');
+	border-top : 2px #ddd solid;
+	border-left : none;
+	border-bottom : none;
+	border-right : none; 
+	
+	background-size : 70%;
+	background-position : 40%;
+	background-repeat: no-repeat;
+}
+
+#elImage {
+	background-image: url('picto-image.svg');
+	border-top : 2px #ddd solid;
+	border-left : none;
+	border-bottom : none;
+	border-right : none; 
+	
+	background-size : 70%;
+	background-position : 40%;
+	background-repeat: no-repeat;
+}
+
+#elPost {
+	border-top : 2px #ddd solid;
+	border-left : none;
+	border-bottom : none;
+	border-right : none; 
+	
+	background-size : 70%;
+	background-position : 40%;
+	background-repeat: no-repeat;
+	background-image: url('picto-postit.svg');
+}
+
+.elI .cross {
+	top : -12px;
+}
+
+.elI .toolbar {
+	width : 85% !important;
+}
+
+.elP .cross {
+	top : 10px;
+	left : 80% !important;
+}
+
+
+

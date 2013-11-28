@@ -34,7 +34,7 @@ module.exports.routes = {
   // (This would also work if you had a file at: `/views/home.ejs`)
   '/': {
    controller: 'BoardController',
-    action: 'index'
+    action: 'home'
   },
 
   '/waow/:id': {
@@ -42,7 +42,7 @@ module.exports.routes = {
     action: 'waowFunc'
   },
 
-  '/editor': {
+  '/editor/:id': {
     controller: 'BoardController',
     action: 'editor'
   },

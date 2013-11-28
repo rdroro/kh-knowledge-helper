@@ -13,11 +13,19 @@
   }
   */
 
-  index: function (req, resp) {
+  home: function (req, resp) {
+  	var board = {
+  		id: -1,
+  		title: '',
+  		description: '',
+  		content: ''
+  	};
   	resp.view(
   		'board/editor', 
   		{
-  			modal: true
+  			modal: true,
+  			board: board
+
   		});
   },
 
@@ -42,13 +50,22 @@
    		selectedBoard.save();
    		var success = {success: 'OK'};
    		resp.json(success);
-
    	});
 
    },
 
    editor: function (req, resp) {
-   	resp.view('board/editor')
+   	var id = req.param('id');
+   	Board.findOneById(id)
+   	.exec(function (err, selectedBoard) {
+   		if (err) {
+   			var error = {error: err};
+   			console.log(error);
+   		}
+   		resp.view('board/editor', {
+   			board: selectedBoard
+   		});
+   	});
    }
 
 

@@ -1,34 +1,36 @@
 <%if (typeof modal != 'undefined') { %>
-<%- partial('modal')%>
+<%- partial('partials/modal')%>
 <% } %>
-<div>
-	<button class='btn btn-primary' id='save-dashboard'>Save</button>
-</div>
+<link rel="stylesheet" type="text/css" href="/styles/editor.css">
+<input type='hidden' name='id' id='boardId' value='<%= board.id %>'>
 
-<div id="dock">
-	<div id="elText" class="ui-widget-content">
-		T
+<div id="workspace">
+
+	<div id="dock">
+		<div id="elText" class="elText ui-widget-content"></div>
+		<div id="elVideo" class="elVideo ui-widget-content"></div>
+		<div id="elImage" class="elImage ui-widget-content">
+			I
+		</div>
+		<div id="elPost" class="elPost ui-widget-content">
+			P
+		</div>
 	</div>
-	<div id="elVideo" class="ui-widget-content">
-		V
-	</div>
-	<div id="elImage" class="ui-widget-content">
-		I
-	</div>
-	<div id="elPost" class="ui-widget-content">
-		P
-	</div>
-</div>
 
-
-
-
-<section id="dashboard">
 	<div id="fiche">
+		<input type='text' id="lienFiche" class='form-control toolbar' placeholder='Entrez votre lien de votre image...' />
+		<img src="/images/insertion-image.svg" alt="" />
 		<input type="text" id="title" name="title" placeholder="Titre..."/>
-		<textarea placeholder="Description de votre fiche ..."> </textarea>
+		<textarea id="ftxt" placeholder="Description de votre fiche ..." maxlength="220"></textarea>
 	</div>
-</section>
+
+	<section id="dashboard">
+		<!-- <%if (typeof board.content != 'undefined') { %>
+		<%- board.content %>
+		<% } %> -->
+	</section>
+
+</div>
 
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
@@ -40,7 +42,35 @@
 $(document).ready(function () {
 	$('#save-dashboard').bind('click', function () {
 		var dashboard = $('#dashboard').html();
-		console.log(dashboard);
-	})
+		dashboard = dashboard.trim();
+
+		var id = $('#boardId').val();
+		
+		var type = '';
+		if (id == -1 ) {
+			type = 'POST';
+			var data = {
+				content: dashboard
+			};
+		} else {
+			type = 'PUT';
+			var data = {
+				id: id,
+				content: dashboard
+			};
+		}
+
+		$.ajax({
+			type: type,
+			url: '/Board',
+			data: data
+		}).success( function (data) {
+			console.log(data);
+		}).fail( function (){
+			// @Todo manage error
+			console.log('error');
+		});
+		
+	});
 });
 </script>
