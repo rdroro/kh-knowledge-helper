@@ -3,6 +3,7 @@
 body{
 	font-family: 'Roboto', sans-serif;
 	background:url('../images/paper.png') repeat;
+	font-size: small !important;
 }
 header, footer{
 	background:#333333;

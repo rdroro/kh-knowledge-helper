@@ -1,8 +1,8 @@
 {
-    "name": "demo",
+    "name": "kh-knowledge-helper",
     "private": true,
-    "version": "0.0.0",
-    "description": "a Sails application",
+    "version": "0.0.1",
+    "description": "kh-knowledge-helper is an personnal assistant to do not forget what we've learned",
     "dependencies": {
         "sails": "0.9.4",
         "grunt": "0.4.1",
