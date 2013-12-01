@@ -20,8 +20,8 @@
 	<div id="fiche">
 		<input type='text' id="lienFiche" class='form-control toolbar' placeholder='Entrez votre lien de votre image...' />
 		<img src="/images/insertion-image.svg" alt="" />
-		<input type="text" id="title" name="title" placeholder="Titre..."/>
-		<textarea id="ftxt" placeholder="Description de votre fiche ..." maxlength="220"></textarea>
+		<input type="text" id="title" name="title" placeholder="Titre..." value='<%= board.title %>'/>
+		<textarea id="ftxt" placeholder="Description de votre fiche ..." maxlength="220"><%= board.description %></textarea>
 	</div>
 
 	<section id="dashboard">
