@@ -11,6 +11,8 @@ lib-cov
 
 node_modules/
 
+.vagrant/
+
 pids
 logs
 results

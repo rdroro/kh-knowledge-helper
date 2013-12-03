@@ -2,7 +2,7 @@
 
 function launchEditor(id) {
 
-if (id !== 'ftxt' && !$('#' + id).hasClass('postit')) {
+if (id !== 'ftxt' && id !== 'title' && !$('#' + id).hasClass('postit')) {
 		tinymce.init({
 			selector : '#' + id,
 			menubar : false,

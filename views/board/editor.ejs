@@ -1,7 +1,7 @@
 <%if (typeof modal != 'undefined') { %>
 <%- partial('partials/modal')%>
 <% } %>
-<link rel="stylesheet" type="text/css" href="/styles/editor.css">
+
 <input type='hidden' name='id' id='boardId' value='<%= board.id %>'>
 
 <div id="workspace">
@@ -25,7 +25,7 @@
 		<img src="/images/insertion-image.svg" alt="" />
 		<% } %>
 		<div id="fiche-text">
-			<input type="text" id="title" name="title" placeholder="Titre..." value='<%= board.title %>'/>
+			<input type="text" id="title" name="title" placeholder="Titre..." value='<%= board.title %>'>
 			<textarea id="ftxt" placeholder="Description de votre fiche ..."><%= board.description %></textarea>
 		</div>
 	</div>
