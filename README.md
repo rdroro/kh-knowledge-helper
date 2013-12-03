@@ -1,4 +1,6 @@
-# Kh - Knowledge help
-## a Sails application
+# Kh - Knowledge helper
 
-## Liens utiles
+Knowledge helper is a nodejs application built with the framework [SailsJS](http://sailsjs.org/)
+
+## Install DEV version
+
