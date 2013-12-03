@@ -18,20 +18,20 @@ Pour installer la version de développement vours devez d'abord installer :
 
 Via https 
 
-  $ git clone https://github.com/rdroro/kh-knowledge-helper.git
-  $ cd kh-knowledge-helper
+	$ git clone https://github.com/rdroro/kh-knowledge-helper.git
+	$ cd kh-knowledge-helper
 
 Ou via ssh (Pensez à ajouter une clé publique à votre compte GitHub)
 
-  $ git clone git@github.com:rdroro/kh-knowledge-helper.git
-  $ cd kh-knowledge-helper
+	$ git clone git@github.com:rdroro/kh-knowledge-helper.git
+	$ cd kh-knowledge-helper
 
 ### Installation environnement de développement
 
 Le fichier Vagrantfile contient toutes les informations nécessaires à la mise en place de l'environnement de développement.
 Une fois dans le dossier kh-knowledgde-helper lancer la commande :
 
-  $ vagrant up
+	$ vagrant up
 
 Cette commande se charge de récupérer une machine virtuelle vierge, de la configurer et d'installer les librairies nécessaires au développement.
 
@@ -41,12 +41,12 @@ En cas de problème, vous pouvez exécuter la commande @vagrant destroy@ qui sup
 
 Vérifiez que la machine virtuelle est correctement lancée via la commande :
 
-  $ vagrant status
+	$ vagrant status
 
 Nous pouvons maintenant nous connecter en SSH à la machine virtuelle pour lancer le serveur via la commande :
 
-  $ vagrant ssh
-  $ cd /vagrant && nodemon app.js
+	$ vagrant ssh
+	$ cd /vagrant && nodemon app.js
 
 L'application est désormais disponible via un navigateur à l'URL [http://localhost:1337](http://localhost:1337)
 
