@@ -18,7 +18,7 @@ Pour installer la version de développement vours devez d'abord installer :
 
 Via https 
 	$ git clone https://github.com/rdroro/kh-knowledge-helper.git
-	$ cd kh-knowledge-helpervhjvghjghj
+	$ cd kh-knowledge-helper
 
 Ou via ssh (Pensez à ajouter une clé publique à votre compte GitHub)
 
